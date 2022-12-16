@@ -1,0 +1,30 @@
+
+<%- include("header") %>
+
+    <div class="box" id="heading">
+
+      <h1> <%= listTile %> </h1>
+
+    </div>
+
+    <div class="box">
+
+        <% for(i=0; i<newClientInput.length; i++) { %>
+
+          <div class="item">
+            <input type="checkbox">
+            <p> <%= newClientInput[i] %> </p>
+          </div>
+
+
+        <% } %>
+
+        <form class="item" action="/" method="post">
+
+          <input type="text" name="newItem" placeholder="Enter item" autocomplete="off">
+          <button type="submit" name="list" value=<%= listTile %>>+</button>
+        </form>
+
+    </div>
+
+<%- include("footer") %>
