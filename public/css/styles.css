@@ -43,7 +43,7 @@ p {
   color: #00204a;
 }
 
-form {
+form.item {
   text-align: center;
   padding: 0 10px;
 }
@@ -92,6 +92,6 @@ input:checked+p{
 
 footer {
   text-align: center;
-  margin-top: 21%;
+  margin-top: 5%;
   color: #E4E9FD;
 }
